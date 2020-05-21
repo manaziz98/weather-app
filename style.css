@@ -1,0 +1,43 @@
+body {
+  background-image: url("/background/all-seasons.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.flex-container {
+  background: rgba(0, 0, 0, 0.4);
+  font-family: "Pangolin", cursive;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+  margin-top: 70px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-title {
+  color: #ffc107;
+}
+
+.card {
+  padding: 0 !important;
+  text-align: center;
+}
+
+.card,
+.input-group {
+  width: 100%;
+}
+
+#search-btn {
+  cursor: pointer;
+}
+/* small screen size */
+
+@media only screen and (max-width: 780px) {
+  .flex-container {
+    border-radius: 0;
+    margin-top: 0;
+  }
+}

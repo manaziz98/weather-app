@@ -85,7 +85,7 @@ let fetchWheatherData = (cityName) => {
 };
 
 let changeBackground = (weatherType) => {
-  document.body.style.backgroundImage = `url("background/${weatherType}.webp")`;
+  document.body.style.backgroundImage = `url("../background/${weatherType}.webp")`;
 };
 
 let speak = (cityName, weatherType) => {

@@ -11,10 +11,12 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <title>weather app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
+      <title>weather app</title>
   </head>
   <body>
-    <div class="flex-container col-12 col-md-6 mx-auto ">
+    <div class="flex-container col-8 col-md-6">
         <h1 id="app-title" class="mb-4">weather app </h1> 
         <div id="input-group" class="input-group mb-4 ">
           <input
@@ -30,8 +32,8 @@
           </div>
         </div>
         <!-- card -->
-        <div class="card shadow col-12">
-          <div class="card-header d-flex flex-wrap justify-content-between">
+        <div class="card ">
+          <div class="card-header border-dark bg-dark text-white d-flex flex-wrap justify-content-between">
             <h4 id="city-output">----</h4>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label id="fahrenheit" class="btn btn-warning active" data-toggle="tooltip" data-placement="left" title="Fahrenheit°">
@@ -44,9 +46,9 @@
           </div>
           <div class="card-body">
             <h2 id="weather" class="card-title">---</h5>
-            <p  class="card-text">temp <span id="temp">--</span>°</p>
-            <p  class="card-text">min-temp <span id="min-temp">--</span>°</p>
-            <p  class="card-text">max-temp <span id="max-temp">--</span>°</p>
+            <p  class="card-text">temp <span id="temp">--</span>°<i class="temperature-icon fas fa-thermometer-half"></i></p>
+            <p  class="card-text">min-temp <span id="min-temp">--</span>°<i class="temperature-icon fas fa-temperature-low"></i></p>
+            <p  class="card-text">max-temp <span id="max-temp">--</span>°<i class="temperature-icon fas fa-temperature-high"></i></p>
           </div>
         </div>
     </div>

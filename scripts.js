@@ -8,7 +8,6 @@ window.onload = () => {
     fetchWheatherData(userInput);
   });
 
-  console.log(fahrenheit, celsius);
   window.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
       userInput = getUserInput();
@@ -18,8 +17,10 @@ window.onload = () => {
 };
 
 let getUserInput = () => {
-  let input = document.getElementById("city-input");
-  return input.value;
+  let inputElem = document.getElementById("city-input");
+  let inputValue = inputElem.value;
+  inputElem.value = "";
+  return inputValue;
 };
 
 /* showing data on the page */
@@ -86,7 +87,7 @@ let fetchWheatherData = (cityName) => {
 
 let changeBackground = (weatherType) => {
   console.log(weatherType);
-  document.body.style.backgroundImage = `url('/background/${weatherType}.webp')`;
+  document.body.style.backgroundImage = `url('/background/${weatherType}.gif')`;
 };
 
 let speak = (cityName, weatherType) => {
@@ -120,4 +121,5 @@ let showError = () => {
   tempMinElem.innerText = "--";
   tempElem.innerText = "--";
   tempMaxElem.innerText = "--";
+  document.body.style.backgroundImage = "url('/background/all-seasons.gif')";
 };

@@ -1,39 +1,33 @@
 body {
-  background-image: url("/background/all-seasons.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.flex-container {
+.weatherApp-container {
+  text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 60px;
-  background: rgba(93, 104, 102, 0.4);
-  box-shadow: 0 0 10px 3px white;
+  box-shadow: 6px 6px 6px 0 #333;
   border-radius: 10px;
-  backdrop-filter: blur(44px);
+}
+
+.weatherApp-container-background {
+  background: url("background/background-container.png");
+  background-size: cover;
 }
 
 #app-title {
-  font-family: "Libre Franklin", sans-serif;
   color: white;
   font-weight: bold;
 }
 
 .card {
-  text-align: center;
-  padding: 0 !important;
-  box-shadow: 0 0 8px 2px lightgray;
+  width: 60%;
 }
 
-.card,
 #input-group {
-  width: 60%;
+  margin: 0 auto;
 }
 
 #search-btn {
@@ -48,7 +42,7 @@ body {
 .temperature-icon {
   margin-left: 1vw;
   font-size: 20px;
-  color: #ffc107;
+  color: #17a2b8;
 }
 
 #temp,
@@ -56,9 +50,10 @@ body {
 #max-temp {
   font-weight: 600;
 }
+
 @media screen and (max-width: 760px) {
   .card,
   #input-group {
-    width: 80%;
+    width: 100%;
   }
 }

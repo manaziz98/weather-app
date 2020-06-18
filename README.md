@@ -1,15 +1,24 @@
-# weather-app
+# Chatty weather app
 
-you're not good with numbers? you want to find out the weather? alright my weather-app speaks to you and tell you the weather
+\*\*version 1.0.0
 
-SOUNDS GOOD RIGHT?
+You're not good with numbers? You want to find out the weather?
+Alright, this weather app speaks to you and tell you the weather
+
+---
 
 ## How to use it?
 
-1. `type (country/city) name`
+- `type (country/city) name`
 
-2. `choose F° : Fahrenheit or C° : celsius` you can choose later
+- `choose F° : Fahrenheit or C° : celsius` you can choose later
 
-3. `press 'Enter' or click the 'search'`
+- `press 'Enter' or click the 'search'`
 
-VERY SIMPLE
+Chatty weather app will take care of the rest
+
+---
+
+## copyright
+
+&copy; Aziz manai, 2020
